@@ -1,4 +1,41 @@
-.www {
+/* fonts-------------------------------------------------------------------------- */
+@font-face {
+    font-family: "Azonix"; 
+    src: url("../static/fonts/Azonix.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }
+@font-face {
+    font-family: "Montserat"; 
+    src: url("../static/fonts/Montserrat-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: bold; 
+    } 
+@font-face {
+    font-family: "Montserat"; 
+    src: url("../static/fonts/Montserrat-ExtraLight.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 100; 
+    } 
+
+
+/* variables----------------------------------------------------------------------- */
+:root{
+    --light-color: #D4D4D4;
+    --size-14: 14px;
+    --size-20: 20px;
+    --size-24: 24px;
+    --size-64: 64px;
+}
+
+
+
+
+.display {
     background-image: url('../static/black-background.gif');
-    /* background-color: aqua; */
+    font-family: "Montserat";
+    font-weight: 100;
+    color: var(--light-color);
+
+    
 }
