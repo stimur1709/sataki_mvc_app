@@ -181,3 +181,32 @@
         display: flex;
     }
 
+
+/* CONTACTS--------------------- */
+    .contacts{
+        height: 1220px;
+
+        display: flex;
+    }
+    .fcontacts-form-txt{
+        padding: var(--padding-60) var(--padding-60) var(--padding-60) var(--padding-60);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .comment{
+        outline: none;
+        background-color: rgb(255, 240, 223, 0);
+
+        width: 500px;
+        resize: none;
+    }
