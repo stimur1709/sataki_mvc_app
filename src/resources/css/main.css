@@ -1,22 +1,22 @@
 /* fonts-------------------------------------------------------------------------- */
 @font-face {
-    font-family: "Azonix"; 
-    src: url("../static/fonts/Azonix.otf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
+    font-family: "Azonix";
+    src: url("../static/fonts/Azonix.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
     }
 @font-face {
-    font-family: "Montserat"; 
-    src: url("../static/fonts/Montserrat-Bold.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: 300; 
-    } 
+    font-family: "Montserat";
+    src: url("../static/fonts/Montserrat-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+    }
 @font-face {
-    font-family: "Montserat"; 
-    src: url("../static/fonts/Montserrat-ExtraLight.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: 100; 
-    } 
+    font-family: "Montserat";
+    src: url("../static/fonts/Montserrat-ExtraLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100;
+    }
 
 
 /* variables----------------------------------------------------------------------- */
@@ -47,7 +47,7 @@
 }
 
 .display {
-    background-image: url('../static/black-background.gif'); 
+    background-image: url('../static/black-background.gif');
 }
 
 .container{
@@ -61,7 +61,7 @@
 
 /* LEFT-MENU--------------------------- */
     .left-menu{
-        width: 15%; 
+        width: 15%;
     }
     .left-menu-fixed{
         width: 15%;
@@ -137,15 +137,16 @@
         color: var(--light-color);
         font-size: var(--size-64);
     }
+    
     .descriptoin{
         font-family: "Azonix";
         font-weight: normal;
         color: var(--light-color);
-        font-size: var(--size-14); 
+        font-size: var(--size-14);
         opacity: 30%;
     }
 
-/* DO--------------------- */  
+/* DO--------------------- */
     .do{
         height: 500px;
 
@@ -170,7 +171,7 @@
         padding-left: 60px;
     }
     .do-callouts{
-        text-transform: uppercase; 
+        text-transform: uppercase;
     }
 
 
