@@ -243,9 +243,6 @@
 
 
 
-
-
-
 /* CONTACTS--------------------- */
     .contacts{
         height: 1220px;
@@ -256,6 +253,54 @@
         padding: var(--padding-60) var(--padding-60) var(--padding-60) var(--padding-60);
     }
 
+
+
+
+/* ABOUT------------------------ */
+    .about{
+        height: 780px;
+
+        display: flex;
+    }
+    .about-left{
+        padding: var(--padding-60);
+    }
+    .about-list{
+        display: flex;
+        justify-content: space-between;
+    
+        margin: var(--padding-60) 0;
+    }
+    .about-list-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 300px;
+    
+        /* background-color: aqua; */
+    }
+
+    .about-list-item__img{
+        width: 100%;
+        height: 300px;
+    }
+    .timur, 
+    .daniil,
+    .kitukha{
+        background-image: url('../img/timur.png');
+    }
+    .about-list-item__name{
+        font-family: "Azonix";
+        font-weight: normal;
+        color: var(--light-color);
+        font-size: var(--size-20);
+        margin-top: 20px;
+        /* opacity: 30%;  */
+    }
+    .about-description{
+        margin-top: 100px;
+    }
 
 
 
