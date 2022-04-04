@@ -306,6 +306,9 @@
 
 
 /* PRICE------------------------ */
+.price{
+    display: flex;
+}
 .price-left{
     padding: var(--padding-60);
 }
@@ -321,6 +324,31 @@ td{
 
 
 
+/* CONTACTS------------------------ */
+.contacts{
+    display: flex;
+
+    height: 1000px;
+}
+.contacts-left{
+    padding: var(--padding-60);
+}
+.contacts-left-heading{
+    text-align: right;
+}
+
+.contacts__form-txt{
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__form{
+    width: 40%;
+}
+.contacts__txt{
+    width: 50%;
+}
+
+
 
 
 
@@ -333,6 +361,6 @@ td{
         outline: none;
         background-color: rgb(255, 240, 223, 0);
 
-        width: 500px;
+        width: 100%;
         resize: none;
     }
