@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     'use strict'
 
-
     const tl = new TimelineMax()
     // let mySplitText = new SplitText('.heading',{type: 'words'})
     // let words = mySplitText.words

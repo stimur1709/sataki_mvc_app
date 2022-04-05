@@ -121,11 +121,12 @@
         width: 82%;
         border-bottom: var(--light-color) 1px solid;
         border-left: var(--light-color) 1px solid;
+        border-right: var(--light-color) 1px solid;
     }
     .right{
         width: 18%;
         border-bottom: var(--light-color) 1px solid;
-        border-left: var(--light-color) 1px solid;
+        /* border-left: var(--light-color) 1px solid; */
     }
     b{
         font-family: "Montserat";
