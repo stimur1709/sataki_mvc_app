@@ -1,9 +1,9 @@
 window.addEventListener('DOMContentLoaded', () => {
     'use strict'
 
+    //Анимация элементов
+
     const tl = new TimelineMax()
-    // let mySplitText = new SplitText('.heading',{type: 'words'})
-    // let words = mySplitText.words
 
         tl.from('.information', 1, {
             x: '100%'
