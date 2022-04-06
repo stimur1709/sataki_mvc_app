@@ -19,15 +19,26 @@ window.addEventListener('DOMContentLoaded', () => {
             opacity: 0
         } )
 
-
-        // tl.staggerFrom(words, .45, {opacity: 0}, .1,)
-        //    .staggerFrom(words, .45, {fontSize: 64})
-
         tl.from('.heading', .35, {
             y: -100,
-            opacity: 0,
+            opacity: 0
         })
 
-        tl.duration(2)
+        tl.from('.services__dev', .5, {
+            x: 100,
+            opacity:0
+        })
+
+        tl.from('.services__design', .45, {
+            x: -100,
+            opacity:0
+        })
+
+        tl.from('.services__help', .40, {
+            y: 100,
+            opacity:0
+        })
+
+        tl.duration(3)
 })
 
