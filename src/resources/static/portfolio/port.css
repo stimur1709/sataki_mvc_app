@@ -15,7 +15,7 @@
 
 body {
    background-image: url("./image/black-background.gif");
-   color: #D4D4D4;
+   color: #fff;
    font-size: calc(var(--index) * .8);
    line-height: 1.75;
    height: var(--depth);
@@ -74,7 +74,9 @@ h1, h2, h3, h4 {
 
     .frame h2 {
         text-align: center;
-        font-size: calc(var(--index) * 3.3 );
+        font-size: calc(var(--index) * 3.2);
+        width: min-content;
+        line-height: 1;
     }
 
     .frame__media {
@@ -83,4 +85,20 @@ h1, h2, h3, h4 {
         height: calc(var(--index) * var(--size-big));
         background-position: center;
         background-size: cover;
+    }
+
+    .frame__media-left {
+        right: calc(var(--size-small) / 2 * var(--index) + var(--gutter));
+    }
+
+
+    .frame__media-right {
+        left: calc(var(--size-big) / 2 * var(--index) + var(--gutter));
+        width: calc(var(--index) * var(--size-big));
+        height: calc(var(--index) * var(--size-small));
+    }
+
+
+    .frame__bg {
+        background-color: rgba(15, 15, 15, 0.699);
     }
