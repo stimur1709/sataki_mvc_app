@@ -22,7 +22,9 @@
 /* variables----------------------------------------------------------------------- */
 :root{
     --light-color: #D4D4D4;
+    --size-12: 12px;
     --size-14: 14px;
+    --size-18: 18px;
     --size-20: 20px;
     --size-24: 24px;
     --size-64: 64px;
@@ -39,16 +41,17 @@
     font-family: "Montserat";
     font-weight: 100;
     color: var(--light-color);
-    font-size: var(--size-24);
+    font-size: var(--size-18);
 
     padding: 0;
     margin: 0;
-    list-style: none;
+    /* list-style: none; */
 }
+a{text-decoration: none;}
 
 .display {
     background-image: url('../static/black-background.gif');
-}
+    }
 
 .container{
     max-width: 1920px;
@@ -60,166 +63,165 @@
 
 
 /* LEFT-MENU--------------------------- */
-    .left-menu{
-        width: 15%;
-    }
-    .left-menu-fixed{
-        width: 15%;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 30px;
+.left-menu{
+    width: 15%;
+}
+.left-menu-fixed{
+    width: 15%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
 
-        text-transform: uppercase;
+    text-transform: uppercase;
 
-        position: fixed;
-    }
-
-
-    .logo{
-        margin-bottom: 40px;
-        width: 10vw;
-    }
-    .logo-img{
-        width: 100%;
-    }
+    position: fixed;
+}
 
 
-    .menu{
-        margin-bottom: 40px;
-    }
-    .menu-item{
-        margin-bottom: 15px;
-    }
+.logo{
+    margin-bottom: 40px;
+    width: 10vw;
+}
+.logo-img{
+    width: 100%;
+}
 
 
-    .clicker{
-        display: flex;
-    }
-    .teme-block{
-        height: 45px;
-        min-width: 85px;
-        border-radius: 50px;
-        background-color: var(--light-color);
+.menu{
+    margin-bottom: 40px;
+    list-style: none;
+}
+.menu-item{
+    margin-bottom: 15px;
+}
 
-        margin-left: 10px;
-    }
-    .teme-circle{
-        height: 40px;
-        width: 40px;
-        border-radius: 40px;
-        background-color: black;
-    }
+
+.clicker{
+    width: 75px;
+    height: 75px;
+    background-color: var(--light-color);
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 20px var(--light-color);
+}
+.clicker-icon{
+    width: 51px;
+    height: 51px;
+    background-image: url('../img/moon.png');
+    transform: translateX(25%) translateY(21%);
+}
 
 
 
 
-/* INFORMATION---------------------------- */
-    .information{
-        width: 85%;
-    }
-    .left{
-        width: 82%;
-        border-bottom: var(--light-color) 1px solid;
-        border-left: var(--light-color) 1px solid;
-        border-right: var(--light-color) 1px solid;
-    }
-    .right{
-        width: 18%;
-        border-bottom: var(--light-color) 1px solid;
-        /* border-left: var(--light-color) 1px solid; */
-    }
-    b{
-        font-family: "Montserat";
-        font-weight: 300;
-        color: var(--light-color);
-        font-size: var(--size-64);
-    }
-    .heading{
-        color: var(--light-color);
-        font-size: var(--size-64);
-    }
 
-    .descriptoin{
-        font-family: "Azonix";
-        font-weight: normal;
-        color: var(--light-color);
-        font-size: var(--size-14);
-        opacity: 30%;
-    }
+/* INFORMATION-------------------------- */
+.information{
+    width: 85%;
+}
+.left{
+    width: 82%;
+    border-bottom: var(--light-color) 1px solid;
+    border-left: var(--light-color) 1px solid;
+    border-right: var(--light-color) 1px solid;
+}
+.right{
+    width: 18%;
+    border-bottom: var(--light-color) 1px solid;
+    /* border-left: var(--light-color) 1px solid; */
+}
+b{
+    font-family: "Montserat";
+    font-weight: 300;
+    color: var(--light-color);
+    font-size: var(--size-64);
+}
+.heading{
+    color: var(--light-color);
+    font-size: var(--size-64);
 
-/* DO--------------------- */
-    .do{
-        height: 500px;
+    margin-bottom: var(--padding-60);
+}
 
-        display: flex;
-    }
-    .do-left{
-        padding: var(--padding-60) var(--padding-60) var(--padding-10) var(--padding-10);
-        text-align: right;
-    }
-    .do-left-heading{
-        margin-bottom: 180px;
-    }
-    .do-left-description{
-        text-align: left;
-    }
-
-    .do-right{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-
-        padding-left: 60px;
-    }
-    .do-callouts{
-        text-transform: uppercase;
-    }
+.descriptoin{
+    font-family: "Azonix";
+    font-weight: normal;
+    color: var(--light-color);
+    font-size: var(--size-12);
+    opacity: 30%;
+    letter-spacing: 2px;
+}
 
 
-/* SERVICES--------------------- */
-    .services{
-        height: 1120px;
+/* DO------------------------------ */
+.do{
+    display: flex;
+}
+.do-left{
+    padding: var(--padding-60) var(--padding-60) var(--padding-10) var(--padding-10);
+    text-align: right;
+}
+.do-left-heading{
+    margin-bottom: 360px !important;
+}
+.do-left-description{
+    text-align: left;
+}
+.do-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
-        display: flex;
-    }
-    .services-left{
-        padding: var(--padding-60);
-    }
-
-    /* .services-list{} */
-    .serv-item{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        margin-top: 50px;
-    }
-    .serv-img{
-        width: 500px;
-        height: 260px;
-
-        background-color: aqua;
-    }
-
-    .services-right{
-        display: flex;
-        align-items: flex-end;
-        text-align: center;
-        justify-content: center;
-
-        padding-bottom: var(--padding-10);
-    }
+    padding-left: 60px;
+}
+.do-callouts{
+    text-transform: uppercase;
+}
 
 
-
-/* WORK------------------------- */
-.work{
-    height: 525px;
+/* SERVICES------------------------ */
+.services{
+    /* height: 1120px; */
 
     display: flex;
 }
-.work-left{
+.services-left{
     padding: var(--padding-60);
+}
+
+.serv-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.serv-item:not(:last-child){
+    margin-bottom: 50px;
+}
+.serv-img{
+    width: 500px;
+    height: 260px;
+
+    background-color: aqua;
+}
+
+.services-right{
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    justify-content: center;
+
+    padding-bottom: var(--padding-10);
+}
+
+
+
+/* WORK---------------------------- */
+.work{
+    display: flex;
+}
+.work-left{
+    padding: var(--padding-60) var(--padding-60) var(--padding-10) var(--padding-60);
 }
 .work-left-heading{
     text-align: right;
@@ -228,7 +230,7 @@
     display: flex;
     justify-content: space-between;
 
-    margin: var(--padding-60) 0;
+    margin:  0 0 var(--padding-60) 0;
 }
 .work-list-item{
     width: 250px;
@@ -243,69 +245,57 @@
 
 
 
-/* CONTACTS--------------------- */
-    .contacts{
-        height: 1220px;
+/* ABOUT---------------------------- */
+.about{
+    display: flex;
+}
+.about-left{
+    padding: var(--padding-60);
+}
+.about-list{
+    display: flex;
+    justify-content: space-between;
+}
+.about-list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-        display: flex;
-    }
-    .fcontacts-form-txt{
-        padding: var(--padding-60) var(--padding-60) var(--padding-60) var(--padding-60);
-    }
+    width: 300px;
+}
 
-
-
-
-/* ABOUT------------------------ */
-    .about{
-        height: 780px;
-
-        display: flex;
-    }
-    .about-left{
-        padding: var(--padding-60);
-    }
-    .about-list{
-        display: flex;
-        justify-content: space-between;
-    
-        margin: var(--padding-60) 0;
-    }
-    .about-list-item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        width: 300px;
-    
-        /* background-color: aqua; */
-    }
-
-    .about-list-item__img{
-        width: 100%;
-        height: 300px;
-    }
-    .timur, 
-    .daniil,
-    .kitukha{
-        background-image: url('../img/timur.png');
-    }
-    .about-list-item__name{
-        font-family: "Azonix";
-        font-weight: normal;
-        color: var(--light-color);
-        font-size: var(--size-20);
-        margin-top: 20px;
-        /* opacity: 30%;  */
-    }
-    .about-description{
-        margin-top: 100px;
-    }
+.about-list-item__img{
+    width: 100%;
+    height: 300px;
+}
+.timur, 
+.daniil,
+.kitukha{
+    background-image: url('../img/timur.png');
+}
+.about-list-item__name{
+    font-family: "Azonix";
+    font-weight: normal;
+    color: var(--light-color);
+    font-size: var(--size-14);
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.big{
+    font-family: "Azonix";
+    font-weight: normal;
+    color: var(--light-color);
+    font-size: var(--size-24);
+    letter-spacing: 2px;
+}
+.about-description{
+    margin-top: 100px;
+}
 
 
 
 
-/* PRICE------------------------ */
+/* PRICE----------------------------- */
 .price{
     display: flex;
 }
@@ -315,7 +305,6 @@
 table{
     width: 100%;
 
-    margin-top: 60px;
     margin-bottom: 60px;
 }
 td{
@@ -324,11 +313,9 @@ td{
 
 
 
-/* CONTACTS------------------------ */
+/* CONTACTS--------------------------- */
 .contacts{
     display: flex;
-
-    height: 1000px;
 }
 .contacts-left{
     padding: var(--padding-60);
@@ -337,30 +324,70 @@ td{
     text-align: right;
 }
 
-.contacts__form-txt{
+
+/* FORM------------ */
+.contacts__form-mainblock{
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
+
+    padding-bottom: 60px;
 }
-.contacts__form{
+.contacts__txt-item-descripion{
+    opacity: 30%;
+}
+
+.contacts__comment{
+    width: 55%;
+}
+.comment{
+    background-color: rgb(0, 0, 0, 0);
+
+    width: 100%;
+    height: 100%;
+    resize: none;
+
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.contacts__txt{
     width: 40%;
 }
-.contacts__txt{
-    width: 50%;
+.contacts__txt-item:not(:last-child){
+    margin-bottom: 20px;
+}
+
+
+.contacts__form-item{
+    width: 100%;
+    padding-left: 15px;
+    padding-bottom: 5px;
+
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+    border-bottom: var(--light-color) 1px solid;
+}
+.contacts__form-item:focus{
+    outline: none;
+}
+.contacts__form-item:not(:last-child){
+    margin-bottom: 40px;
+}
+.btn{
+    padding: 10px;
+    border: var(--light-color) 1px solid;
 }
 
 
 
+.contacts-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-
-
-
-
-
-
-    .comment{
-        outline: none;
-        background-color: rgb(255, 240, 223, 0);
-
-        width: 100%;
-        resize: none;
-    }
+    padding: 10px;
+}
+.contacts-right-item{
+    margin-bottom: 10px;
+}
