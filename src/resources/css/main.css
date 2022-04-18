@@ -44,6 +44,8 @@
     padding: 0;
     margin: 0;
     list-style: none;
+
+    text-decoration: none;
 }
 
 .display {
@@ -90,6 +92,9 @@
     .menu-item{
         margin-bottom: 15px;
     }
+
+    
+
 
 
     .clicker{

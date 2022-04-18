@@ -25,7 +25,7 @@
                 <div class="logo"><img src="./static/logo.png" alt="" class="logo-img"></div>
                 <ul class="menu">
                     <li class="menu-item">Услуги</li>
-                    <li href=".//static/portfolio/portfolio.html" class="menu-item">Работы</li>
+                    <a href="../resources/static/portfolio/portfolio.html" class="menu-item">Работы</a>
                     <li class="menu-item">О нас</li>
                     <li class="menu-item">Стоимость</li>
                     <li class="menu-item">Связь с нами</li>
@@ -159,25 +159,26 @@
                         <h1 class="heading contacts-left-heading"><b>Связь</b> с нами</h1>
                         <div class="contacts__form-txt">
                             <div class="contacts__form">
-                                <form action="" class="contacts__form-block" novalidate method="POST">
+                                <form action="#" class="contacts__form-block"
+                                id="form" novalidate method="POST">
                                     <div><textarea class="comment" name="comment"></textarea></div>
                                     <div class="contacts__form-block-nexus">
                                         <p class="contacts__form-block-description">ВАШЕ ИМЯ</p>
-                                        <input type="text" class="form-block-item name" autocomplete="off"  name="name" >
+                                        <input type="text" class="form-block-item name" id="formName" autocomplete="off"  name="name" >
                                     </div>
                                     <div class="contacts__form-block-nexus">
                                         <p class="contacts__form-block-description">НАЗВАНИЕ КОМПАНИИ</p>
-                                        <input type="text" class="form-block-item company-name" autocomplete="off"  name="company-name" >
+                                        <input type="text" class="form-block-item company-name" id="formSurname" autocomplete="off"  name="company-name" >
                                     </div>
                                     <div class="contacts__form-block-nexus">
                                         <p class="body__form-block-description">ТЕЛЕФОН</p>
-                                        <input type="text" class="form-block-item tel" autocomplete="off"  name="tel" >
+                                        <input type="text" class="form-block-item tel" id="tel" autocomplete="off"  name="tel" >
                                     </div>
-                                    <div class="contacts__form-block-nexus">
+                                    <div class="contacts__form-block-nexus ">
                                         <p class="body__form-block-description">ПОЧТА</p>
-                                        <input type="text" class="form-block-item e-mail" autocomplete="off"  name="e-mail" >
+                                        <input type="text" class="form-block-item e-mail" id="formEmail" autocomplete="off"  name="e-mail" >
                                     </div>
-                                    <input class="btn" type="submit" value="Отправить">
+                                    <input class="btn form__btn" type="submit" value="Отправить">
                                 </form>
                             </div>
                             <div class="contacts__txt">
