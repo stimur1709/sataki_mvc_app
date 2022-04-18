@@ -96,6 +96,9 @@ a{text-decoration: none;}
 }
 
 
+
+
+
 .clicker{
     width: 75px;
     height: 75px;
@@ -268,7 +271,7 @@ b{
     width: 100%;
     height: 300px;
 }
-.timur, 
+.timur,
 .daniil,
 .kitukha{
     background-image: url('../img/timur.png');

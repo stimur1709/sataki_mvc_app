@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+    --gutter: 30px;
+    --size-small: 26;
+    --size-big: 36;
+    --depth: 4000px;
+    --transition: .75s cubic-bezier(.075, .5, 0, 1)
+}
+
+body {
+   background-image: url("./image/black-background.gif");
+   color: #fff;
+   font-size: calc(var(--index) * .8);
+   line-height: 1.75;
+   height: var(--depth);
+   font-weight: normal;
+   font-family: "Azonix";
+}
+
+h1, h2, h3, h4 {
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+/* fonts-------------------------------------------------------------------------- */
+@font-face {
+    font-family: "Azonix";
+    src: url("./Fonts/Azonix.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+    }
+@font-face {
+    font-family: "Montserat";
+    src: url("./Fonts/Montserrat-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+    }
+@font-face {
+    font-family: "Montserat";
+    src: url("./Fonts/Montserrat-ExtraLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100;
+    }
+
+    .contaier {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        perspective: 1500px;
+    }
+
+    .gallery {
+        transform-style: preserve-3d;
+        height: 100%;
+    }
+
+    .frame {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition:  var(--transition),opacity .75s ease;
+        will-change: transform;
+        transform-style: preserve-3d;
+    }
+
+    .frame h2 {
+        text-align: center;
+        font-size: calc(var(--index) * 3.2);
+        width: min-content;
+        line-height: 1;
+    }
+
+    .frame__media {
+        position: relative;
+        width: calc(var(--index) * var(--size-small));
+        height: calc(var(--index) * var(--size-big));
+        background-position: center;
+        background-size: cover;
+    }
+
+    .frame__media-left {
+        right: calc(var(--size-small) / 2 * var(--index) + var(--gutter));
+    }
+
+
+    .frame__media-right {
+        left: calc(var(--size-big) / 2 * var(--index) + var(--gutter));
+        width: calc(var(--index) * var(--size-big));
+        height: calc(var(--index) * var(--size-small));
+    }
+
+
+    .frame__bg {
+        background-color: rgba(15, 15, 15, 0.699);
+    }
