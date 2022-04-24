@@ -3,43 +3,49 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //Анимация элементов
 
-    const tl = new TimelineMax()
+    // const tl = new TimelineMax()
+    //     tl.from('html', 1, {
+    //       display:'none',
+    //       duration: .5
+    //     })
 
-        tl.from('.information', 1, {
-            x: '100%'
-        })
+    //     tl.from('.information', 1, {
+    //         x: '100%'
+    //     })
 
-        tl.from('.left-menu-fixed', .6, {
-            x: -50,
-            opacity: 0
-        })
+    //     tl.from('.left-menu-fixed', .6, {
+    //         x: -50,
+    //         opacity: 0
+    //     })
 
-        tl.from('.right', .5, {
-            x: 100,
-            opacity: 0
-        } )
+    //     tl.from('.right', .5, {
+    //         x: 100,
+    //         opacity: 0
+    //     } )
 
-        tl.from('.heading', .35, {
-            y: -100,
-            opacity: 0
-        })
+    //     tl.from('.heading', .35, {
+    //         y: -100,
+    //         opacity: 0
+    //     })
 
-        tl.from('.services__dev', .5, {
-            x: 100,
-            opacity:0
-        })
+    //     tl.from('.services__dev', .5, {
+    //         x: 100,
+    //         opacity:0
+    //     })
 
-        tl.from('.services__design', .45, {
-            x: -100,
-            opacity:0
-        })
+    //     tl.from('.services__design', .45, {
+    //         x: -100,
+    //         opacity:0
+    //     })
 
-        tl.from('.services__help', .40, {
-            y: 100,
-            opacity:0
-        })
+    //     tl.from('.services__help', .40, {
+    //         y: 100,
+    //         opacity:0
+    //     })
 
-        tl.duration(3)
+    //     // tl.duration(3)
+
+
 
 
         // Проверка формы
@@ -53,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
           dateBirth = form.querySelector('#formDB'),
           request = form.querySelectorAll('.req'),
           checkbox = form.querySelector('.checkbox__input'),
-          btn = form.querySelector('.form__btn');
+          btn = form.querySelector('.btn');
 
     const NameReg = /^[A-Za-zА-Яа-я]{2,30}$|(^$)/,
           MailReg =  /[A-Za-z0-9-_]{1,}@[A-Za-z0-9-_]{1,}\.[a-z]{2,4}|(^$)/,

@@ -10,22 +10,31 @@
     <!-- style connect -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <script defer src="./js/main.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src="../resources/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
     <title>SATAKI</title>
 </head>
 
 
 <body>
+    <script defer src="./js/main.js"></script>
 
     <div class="display">
         <div class="container">
 
 
-            <section class="left-menu-fixed">
+            <section class="left-menu-fixed  animate__animated animate__fadeInLeft">
                 <div class="logo"><img src="./static/logo.png" alt="" class="logo-img"></div>
                 <ul class="menu">
                     <li class="menu-item"><a href="" class="menu-item-link">Услуги</a></li>
-                    <li class="menu-item"><a href="" class="menu-item-link">Работы</a></li>
+                    <li class="menu-item"><a href="../resources/static/portfolio/portfolio.html" class="menu-item-link">Работы</a></li>
                     <li class="menu-item"><a href="" class="menu-item-link">О нас</a></li>
                     <li class="menu-item"><a href="" class="menu-item-link">Стоимость</a></li>
                     <li class="menu-item"><a href="" class="menu-item-link">Связь с нами</a></li>
@@ -40,10 +49,10 @@
             <div class="information">
                 <section class="do">
                     <div class="left do-left">
-                        <h1 class="heading do-left-heading">Создаём <b>лендинги,<br> корпоративные сайты</b> для малого<br> и среднего бизнеса</h1>
-                        <p class="descriptoin do-left-description">Improve daily, throughout your life,<br> so that today you are better than yesterday, and tomorrow better than today. There is no limit to perfection</p>
+                        <h1 class="heading do-left-heading animate__animated animate__fadeInDown animate__delay-1s" >Создаём <b>лендинги,<br> корпоративные сайты</b> для малого<br> и среднего бизнеса</h1>
+                        <p class="descriptoin do-left-description animate__animated ">Improve daily, throughout your life,<br> so that today you are better than yesterday, and tomorrow better than today. There is no limit to perfection</p>
                     </div>
-                    <div class="right do-right">
+                    <div class="right do-right animate__animated animate__fadeIn animate__delay-2s">
                         <p class="do-callouts">Разработка</p>
                         <p class="do-callouts">Дизайн</p>
                         <p class="do-callouts">Поддержка</p>
@@ -52,17 +61,17 @@
 
                 <section class="services">
                     <div class="left services-left">
-                        <h1 class="heading services-left-heading"><b>Услуги</b></h1>
+                        <h1 class="heading services-left-heading animate__animated animate__fadeInDown  wow"><b>Услуги</b></h1>
                         <div class="services-list">
-                            <div class="services__dev serv-item">
+                            <div class="services__dev serv-item animate__animated animate__fadeInRight animate__delay-1s wow">
                                 <p class="serv-txt serv-txt__dev">Разработка лендингов и корпоративных сайтов </p>
                                 <div class="serv-img serv-img__dev"></div>
                             </div>
-                            <div class="services__design serv-item">
+                            <div class="services__design serv-item animate__animated animate__fadeInLeft animate__delay-1s wow">
                                 <div class="serv-img serv-img__design"></div>
                                 <p class="serv-txt serv-txt__design">Создание дизайн-концепта под ключь</p>
                             </div>
-                            <div class="services__help serv-item">
+                            <div class="services__help serv-item animate__animated animate__fadeInRight animate__delay-1s wow">
                                 <p class="serv-txt serv-txt__helo">Консультации и доработки действующих сайтов</p>
                                 <div class="serv-img serv-img__help"></div>
                             </div>
@@ -84,7 +93,7 @@
                         </div>
                         <p class="descriptoin work-right-descriptoin">Take it easy on matters of great importance</p>
                     </div>
-                    <div class="right do-right">
+                    <div class="right do-right animate__animated animate__fadeIn animate__delay-2s">
                         <p class="do-callouts">Качество</p>
                         <p class="do-callouts">Удобство</p>
                         <p class="do-callouts">Исскуство</p>
@@ -93,25 +102,25 @@
 
                 <section class="about">
                     <div class="left about-left">
-                        <h1 class="heading about-left-heading">О нас</h1>
+                        <h1 class="heading about-left-heading animate__animated animate__fadeInDown wow">О нас</h1>
                         <ul class="about-list">
-                            <li class="about-list-item">
+                            <li class="about-list-item animate__animated animate__fadeIn animate__delay-1s wow">
                                 <div src="" alt="" class="about-list-item__img timur"></div>
                                 <p class="about-list-item__status">backend-developer</p>
                                 <p class="about-list-item__name"><span class="big">sa</span>fin timur</p>
                             </li>
-                            <li class="about-list-item">
+                            <li class="about-list-item animate__animated animate__fadeIn animate__delay-2s wow">
                                 <div src="" alt="" class="about-list-item__img daniil"></div>
                                 <p class="about-list-item__status">backend-developer</p>
                                 <p class="about-list-item__name"><span class="big">ta</span>rasov daniil</p>
                             </li>
-                            <li class="about-list-item">
+                            <li class="about-list-item animate__animated animate__fadeIn animate__delay-3s wow">
                                 <div src="" alt="" class="about-list-item__img kitukha"></div>
                                 <p class="about-list-item__status">backend-developer</p>
                                 <p class="about-list-item__name"><span class="big">ki</span>tykha nikita</p>
                             </li>
                         </ul>
-                        <p class="about-description">Тут написать про философию про надежность компании про преданность своему делу и проче потематике самурайства и того что мы ахуеть какие крутые три  мушкетера </p>
+                        <p class="about-description animate__animated animate__fadeInUp wow">Тут написать про философию про надежность компании про преданность своему делу и проче потематике самурайства и того что мы ахуеть какие крутые три  мушкетера </p>
                     </div>
                     <div class="right about-right">
                     </div>
@@ -119,8 +128,8 @@
 
                 <section class="price">
                     <div class="left price-left">
-                        <h1 class="heading about-left-heading"><b>Сколько</b> это стоит?</h1>
-                        <table>
+                        <h1 class="heading about-left-heading animate__animated animate__fadeInDown  wow"><b>Сколько</b> это стоит?</h1>
+                        <table class="animate__animated animate__shakeY animate__delay-1s wow">
                             <tr>
                                 <td>Услуги</td>
                                 <td>Сроки</td>
@@ -147,7 +156,7 @@
                                 <td>1.500 ₽  /  час</td>
                             </tr>
                         </table>
-                        <p class="price-description">КАЖДЫЙ НАШ ПРОЕКТ, КАК И БИЗНЕС — ИНДИВИДУАЛЕН, ПОЭТОМУ СНАЧАЛА ОБСУЖДАЕМ ЦЕЛИ И ЗАДАЧИ КОТОРЫЕ ВЫ ХОТИТЕ РЕШИТЬ С ПОМОЩЬЮ САЙТА, А ПОСЛЕ ГОТОВИМ ПЕРСОНАЛЬНОЕ ПРЕДЛОЖЕНИЕ  </p>
+                        <p class="price-description animate__animated animate__fadeInDown wow">КАЖДЫЙ НАШ ПРОЕКТ, КАК И БИЗНЕС — ИНДИВИДУАЛЕН, ПОЭТОМУ СНАЧАЛА ОБСУЖДАЕМ ЦЕЛИ И ЗАДАЧИ КОТОРЫЕ ВЫ ХОТИТЕ РЕШИТЬ С ПОМОЩЬЮ САЙТА, А ПОСЛЕ ГОТОВИМ ПЕРСОНАЛЬНОЕ ПРЕДЛОЖЕНИЕ  </p>
                     </div>
                     <div class="right price-right">
                     </div>
@@ -155,9 +164,9 @@
 
                 <section class="contacts">
                     <div class="left contacts-left">
-                        <h1 class="heading contacts-left-heading"><b>Связь</b> с нами</h1>
-                        <div class="contacts__form-txt">
-                            <form action="" class="contacts__form-block" novalidate method="POST">
+                        <h1 class="heading contacts-left-heading animate__animated animate__fadeInDown  wow"><b>Связь</b> с нами</h1>
+                        <div class="contacts__form-txt animate__animated animate__fadeIn wow animate__delay-1s">
+                            <form action="#" class="contacts__form-block" id="form" novalidate method="POST">
                                 <div class="contacts__form-mainblock">
                                     <div class="contacts__comment">
                                         <textarea class="comment" placeholder="ВАШИ КОММЕНТАРИИ" name="comment"></textarea>
@@ -187,17 +196,17 @@
                                 </div>
 
                                 <div class="contacts__form-input">
-                                    <input type="text" class="contacts__form-item name" placeholder="ВАШЕ ИМЯ" autocomplete="off"  name="name" >
-                                    <input type="text" class="contacts__form-item company-name" placeholder="НАЗВАНИЕ КОМПАНИИ" autocomplete="off"  name="company-name" >
-                                    <input type="text" class="contacts__form-item tel" placeholder="ТЕЛЕФОН" autocomplete="off"  name="tel" >
-                                    <input type="text" class="contacts__form-item e-mail" placeholder="ПОЧТА" autocomplete="off"  name="e-mail" >
+                                    <input type="text" class="contacts__form-item name" id="formName" placeholder="ВАШЕ ИМЯ" autocomplete="off"  name="name" >
+                                    <input type="text" class="contacts__form-item company-name" id="formSurname" placeholder="НАЗВАНИЕ КОМПАНИИ" autocomplete="off"  name="company-name" >
+                                    <input type="text" class="contacts__form-item tel" id="tel" placeholder="ТЕЛЕФОН" autocomplete="off"  name="tel" >
+                                    <input type="text" class="contacts__form-item e-mail" id="formEmail" placeholder="ПОЧТА" autocomplete="off"  name="e-mail" >
                                     <input class="contacts__form-item btn" type="submit" value="ОТПРАВИТЬ">
                                 </div>
                             </form>
                         </div>
                     </div>
 
-                    <div class="right contacts-right">
+                    <div class="right contacts-right animate__animated animate__fadeIn animate__delay-2s">
                         <div class="contacts-right__social">
                             <p class="social-item contacts-right-item"><a href="">TELEGRAM</a></p>
                             <p class="social-item contacts-right-item"><a href="">VKONAKTE</a></p>
@@ -220,10 +229,10 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script src="https://www.micelistudios.com/js/utils/SplitText.min.js"></script>
+    <script src="https://www.micelistudios.com/js/utils/SplitText.min.js"></script> -->
 
 </body>
 </html>
