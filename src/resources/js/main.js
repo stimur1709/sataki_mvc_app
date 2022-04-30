@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
       let elementId = $(this).data('scroll');
       let elementOffset = $(elementId).offset().top;
 
-      console.log(elementOffset);
+      // console.log(elementOffset);
 
       $("html,body").animate({
         scrollTop: elementOffset - 20
