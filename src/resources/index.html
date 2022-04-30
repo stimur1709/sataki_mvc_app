@@ -14,6 +14,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-bnIvzh6FU75ZKxp0GXLH9bewza/OIw6dLVh9ICg0gogclmYGguQJWl8U30WpbsGTqbIiAwxTsbe76DErLq5EDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../resources/wow.min.js"></script>
     <script>
         new WOW().init();
@@ -24,8 +25,6 @@
 
 
 <body>
-    <script defer src="./js/main.js"></script>
-
     <div class="display">
         <div class="container">
 
@@ -33,11 +32,11 @@
             <section class="left-menu-fixed  animate__animated animate__fadeInLeft">
                 <div class="logo"><img src="./static/logo.png" alt="" class="logo-img"></div>
                 <ul class="menu">
-                    <li class="menu-item"><a href="" class="menu-item-link">Услуги</a></li>
-                    <li class="menu-item"><a href="../resources/static/portfolio/portfolio.html" class="menu-item-link">Работы</a></li>
-                    <li class="menu-item"><a href="" class="menu-item-link">О нас</a></li>
-                    <li class="menu-item"><a href="" class="menu-item-link">Стоимость</a></li>
-                    <li class="menu-item"><a href="" class="menu-item-link">Связь с нами</a></li>
+                    <li class="menu-item"><a href="#" class="menu-item-link" data-scroll="#services">Услуги</a></li>
+                    <li class="menu-item"><a target="_blank" href="../resources/static/portfolio/portfolio.html" class="menu-item-link">Работы</a></li>
+                    <li class="menu-item"><a href="#" data-scroll="#about" class="menu-item-link">О нас</a></li>
+                    <li class="menu-item"><a href="#" data-scroll="#price" class="menu-item-link">Стоимость</a></li>
+                    <li class="menu-item"><a href="#" data-scroll="#connection" class="menu-item-link">Связь с нами</a></li>
                 </ul>
                 <div class="clicker">
                     <div class="clicker-icon"></div>
@@ -59,7 +58,7 @@
                     </div>
                 </section>
 
-                <section class="services">
+                <section class="services" id="services">
                     <div class="left services-left">
                         <h1 class="heading services-left-heading animate__animated animate__fadeInDown  wow"><b>Услуги</b></h1>
                         <div class="services-list">
@@ -82,7 +81,7 @@
                     </div>
                 </section>
 
-                <section class="work">
+                <section class="work" >
                     <div class="left work-left">
                         <h1 class="heading work-left-heading">Наши <b>работы</b></h1>
                         <div class="work-list">
@@ -100,7 +99,7 @@
                     </div>
                 </section>
 
-                <section class="about">
+                <section class="about" id="about">
                     <div class="left about-left">
                         <h1 class="heading about-left-heading animate__animated animate__fadeInDown wow">О нас</h1>
                         <ul class="about-list">
@@ -126,7 +125,7 @@
                     </div>
                 </section>
 
-                <section class="price">
+                <section class="price" id="price">
                     <div class="left price-left">
                         <h1 class="heading about-left-heading animate__animated animate__fadeInDown  wow"><b>Сколько</b> это стоит?</h1>
                         <table class="animate__animated animate__shakeY animate__delay-1s wow">
@@ -162,7 +161,7 @@
                     </div>
                 </section>
 
-                <section class="contacts">
+                <section class="contacts" id="connection">
                     <div class="left contacts-left">
                         <h1 class="heading contacts-left-heading animate__animated animate__fadeInDown  wow"><b>Связь</b> с нами</h1>
                         <div class="contacts__form-txt animate__animated animate__fadeIn wow animate__delay-1s">
@@ -228,11 +227,6 @@
 
         </div>
     </div>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script src="https://www.micelistudios.com/js/utils/SplitText.min.js"></script> -->
-
+    <script src="./js/main.js"></script>
 </body>
 </html>
