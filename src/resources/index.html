@@ -10,6 +10,7 @@
     <!-- style connect -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/adaptivity.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -26,7 +27,9 @@
 
 
 <body>
-    <div class="display">
+    <div class="cursor"></div>
+
+    <div class="display_black">
         <div class="container">
 
 
@@ -40,7 +43,7 @@
                     <li class="menu-item"><a href="#" data-scroll="#connection" class="menu-item-link">Связь с нами</a></li>
                 </ul>
                 <div class="clicker">
-                    <div class="clicker-icon"></div>
+                    <div class="clicker-icon moon"></div>
                 </div>
             </section>
             <div class="left-menu"></div>
@@ -49,7 +52,7 @@
             <div class="information">
                 <section class="do">
                     <div class="left do-left">
-                        <h1 class="heading do-left-heading animate__animated animate__fadeInDown animate__delay-1s" >Создаём <b>лендинги,<br> корпоративные сайты</b> для малого<br> и среднего бизнеса</h1>
+                        <h1 class="heading do-left-heading animate__animated animate__fadeInDown animate__delay-1s" >Создаём <b>лендинги,<br> корпоративные сайты</b> для малого и среднего бизнеса</h1>
                         <p class="descriptoin do-left-description animate__animated ">Improve daily, throughout your life,<br> so that today you are better than yesterday, and tomorrow better than today. There is no limit to perfection</p>
                     </div>
                     <div class="right do-right animate__animated animate__fadeIn animate__delay-2s">
@@ -200,7 +203,7 @@
                                     <input type="text" class="contacts__form-item company-name" id="formSurname" placeholder="НАЗВАНИЕ КОМПАНИИ" autocomplete="off"  name="company-name" >
                                     <input type="text" class="contacts__form-item tel" id="tel" placeholder="ТЕЛЕФОН" autocomplete="off"  name="tel" >
                                     <input type="text" class="contacts__form-item e-mail" id="formEmail" placeholder="ПОЧТА" autocomplete="off"  name="e-mail" >
-                                    <input class="contacts__form-item btn" type="submit" value="ОТПРАВИТЬ">
+                                    <input class="contacts__form-item btn" type="button" value="ОТПРАВИТЬ">
                                 </div>
                             </form>
                         </div>

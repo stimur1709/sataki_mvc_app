@@ -22,6 +22,7 @@
 /* variables----------------------------------------------------------------------- */
 :root{
     --light-color: #D4D4D4;
+    --black-color: #101010;
     --size-12: 12px;
     --size-14: 14px;
     --size-18: 18px;
@@ -40,17 +41,26 @@
 
     font-family: "Montserat";
     font-weight: 100;
-    color: var(--light-color);
     font-size: var(--size-18);
 
     padding: 0;
     margin: 0;
     /* list-style: none; */
-}
-a{text-decoration: none;}
 
-.display {
+    /* transition-duration: 0.2s; */
+    /* transition-property: color; */
+}
+a{
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+
+.display_black {
     background-image: url('../static/black-background.gif');
+    }
+.display_white {
+    background-image: url('../static/white-background.gif');
     }
 
 .container{
@@ -58,6 +68,8 @@ a{text-decoration: none;}
     margin: auto;
 
     display: flex;
+
+    color: var(--light-color);
 }
 
 
@@ -95,11 +107,6 @@ a{text-decoration: none;}
     margin-bottom: 15px;
 }
 
-a {
-    transition-duration: 5s;
-}
-
-
 
 
 
@@ -109,16 +116,21 @@ a {
     background-color: var(--light-color);
     border-radius: 20px;
 
-    box-shadow: 0px 0px 20px var(--light-color);
+    box-shadow: 0px 0px 10px var(--light-color);
+    transition: all .3s ease; 
 }
 .clicker-icon{
     width: 51px;
     height: 51px;
-    background-image: url('../img/moon.png');
     transform: translateX(25%) translateY(21%);
 }
 
-
+.sun{
+    background-image: url('../img/moon.png');
+}
+.moon{
+    background-image: url('../img/sun.png');
+}
 
 
 
@@ -128,23 +140,24 @@ a {
 }
 .left{
     width: 82%;
-    border-bottom: var(--light-color) 1px solid;
-    border-left: var(--light-color) 1px solid;
-    border-right: var(--light-color) 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: var(--light-color);
 }
 .right{
     width: 18%;
-    border-bottom: var(--light-color) 1px solid;
-    /* border-left: var(--light-color) 1px solid; */
+    border-bottom: 1px solid;
+    border-color: var(--light-color);
 }
 b{
     font-family: "Montserat";
     font-weight: 300;
-    color: var(--light-color);
+    /* color: var(--light-color); */
     font-size: var(--size-64);
 }
 .heading{
-    color: var(--light-color);
+    /* color: var(--light-color); */
     font-size: var(--size-64);
 
     margin-bottom: var(--padding-60);
@@ -153,7 +166,7 @@ b{
 .descriptoin{
     font-family: "Azonix";
     font-weight: normal;
-    color: var(--light-color);
+    /* color: var(--light-color); */
     font-size: var(--size-12);
     opacity: 30%;
     letter-spacing: 2px;
@@ -283,7 +296,7 @@ b{
 .about-list-item__name{
     font-family: "Azonix";
     font-weight: normal;
-    color: var(--light-color);
+    /* color: var(--light-color); */
     font-size: var(--size-14);
     margin-top: 20px;
     letter-spacing: 2px;
@@ -291,7 +304,7 @@ b{
 .big{
     font-family: "Azonix";
     font-weight: normal;
-    color: var(--light-color);
+    /* color: var(--light-color); */
     font-size: var(--size-24);
     letter-spacing: 2px;
 }
@@ -349,6 +362,7 @@ td{
 }
 .comment{
     background-color: rgb(0, 0, 0, 0);
+    color: var(--light-color);
 
     width: 100%;
     height: 100%;
@@ -360,6 +374,7 @@ td{
 
 .contacts__txt{
     width: 40%;
+    /* color: var(--light-color); */
 }
 .contacts__txt-item:not(:last-child){
     margin-bottom: 20px;
@@ -370,6 +385,7 @@ td{
     width: 100%;
     padding-left: 15px;
     padding-bottom: 5px;
+    color: var(--light-color);
 
     background-color: rgb(0, 0, 0, 0);
     border: none;
@@ -384,6 +400,7 @@ td{
 .btn{
     padding: 10px;
     border: var(--light-color) 1px solid;
+    color: var(--light-color);
 }
 
 
@@ -398,3 +415,4 @@ td{
 .contacts-right-item{
     margin-bottom: 10px;
 }
+
