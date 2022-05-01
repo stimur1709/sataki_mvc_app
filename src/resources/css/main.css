@@ -45,10 +45,6 @@
 
     padding: 0;
     margin: 0;
-    /* list-style: none; */
-
-    /* transition-duration: 0.2s; */
-    /* transition-property: color; */
 }
 a{
     text-decoration: none;
@@ -123,6 +119,7 @@ a{
     width: 51px;
     height: 51px;
     transform: translateX(25%) translateY(21%);
+    background-repeat: no-repeat;
 }
 
 .sun{
@@ -218,12 +215,25 @@ b{
 .serv-item:not(:last-child){
     margin-bottom: 50px;
 }
+
+
+
 .serv-img{
     width: 500px;
     height: 260px;
-
-    background-color: aqua;
+    /* border: var(--black-color) 1px solid; */
 }
+.serv-img__dev{
+    background-image: url('../img/services_1.png');
+}
+.serv-img__design{
+    background-image: url('../img/services_2.png');
+}
+.serv-img__help{
+    background-image: url('../img/services_3.png');
+}
+
+
 
 .services-right{
     display: flex;
@@ -252,6 +262,24 @@ b{
 
     margin:  0 0 var(--padding-60) 0;
 }
+.work-list__test{
+    font-size: var(--size-64);
+    padding-bottom: var(--padding-60);
+    position: relative;
+}
+.work-list__test:after{
+    position: absolute;
+    content: '<';
+    top: 5px;
+    transition: .3s;
+    transform-origin: center center;
+}
+.work-list__test:hover:after{
+    transform: translateX(100px) rotate(-180deg) ;
+    transform-origin: center center;
+}
+
+
 .work-list-item{
     width: 250px;
     height: 250px;
@@ -285,13 +313,18 @@ b{
 }
 
 .about-list-item__img{
-    width: 100%;
+    width: 300px;
     height: 300px;
+    background-size: cover;
 }
-.timur,
-.daniil,
-.kitukha{
+.timur{
     background-image: url('../img/timur.png');
+}
+.daniil{
+    background-image: url('../img/daniil.png');
+}
+.kitukha{
+    background-image: url('../img/nikita.png');
 }
 .about-list-item__name{
     font-family: "Azonix";

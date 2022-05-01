@@ -96,7 +96,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // -------------------cursor---------------------
   let cursor = document.querySelector('.cursor');
-  let item = document.querySelectorAll('a, input, .comment, .about-list-item__name, .clicker');
+  let item = document.querySelectorAll('a, input, .comment, .about-list-item__name, .clicker, .work-list__test');
 
   window.addEventListener('mousemove', cur);
   function cur(el){
