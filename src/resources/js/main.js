@@ -3,7 +3,7 @@
 window.addEventListener('DOMContentLoaded', () => {
   'use strict'
 
-  // click_on_btn-----------------------------------
+  // -----------------click_on_btn------------------
   let form = document.querySelector('.contacts__form-block');
   form.addEventListener('submit', el=>{
     el.preventDefault();
@@ -123,7 +123,5 @@ window.addEventListener('DOMContentLoaded', () => {
       link.classList.add('hov_group');
     });
   })
-
-
 })
 

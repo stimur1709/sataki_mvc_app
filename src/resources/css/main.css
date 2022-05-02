@@ -295,6 +295,9 @@ b{
 .about-left{
     padding: var(--padding-in-1);
 }
+.about-left-heading{
+    text-align: right;
+}
 .about-list{
     display: flex;
     justify-content: space-between;
