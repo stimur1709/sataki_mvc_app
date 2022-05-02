@@ -106,15 +106,6 @@
 
 
      /* contacts_tel -------- */
-     .left-menu-fixed{
-        display: none;
-    }
-    .left-menu{
-        width: 0;
-    }
-    .information{
-        width: 100%;
-    }
 
     .contacts_tel{
         display: block;
@@ -201,6 +192,18 @@
     }
     .comment{
        height: 100px;
+    }
+
+
+
+    .left-menu-fixed{
+        display: none;
+    }
+    .left-menu{
+        width: 0;
+    }
+    .information{
+        width: 100%;
     }
 }
 /* top_menu--------------------------- */
