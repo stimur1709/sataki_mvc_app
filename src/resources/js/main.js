@@ -3,6 +3,12 @@
 window.addEventListener('DOMContentLoaded', () => {
   'use strict'
 
+  // click_on_btn-----------------------------------
+  let form = document.querySelector('.contacts__form-block');
+  form.addEventListener('submit', el=>{
+    el.preventDefault();
+  });
+
 
   // -------------------scroll---------------------
 
@@ -11,8 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
       let elementId = $(this).data('scroll');
       let elementOffset = $(elementId).offset().top;
-
-      // console.log(elementOffset);
 
       $("html,body").animate({
         scrollTop: elementOffset - 20
@@ -23,73 +27,78 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   // -------------------clicker---------------------
-  const clisker = document.querySelector('.clicker'),
-        clickerIcon = document.querySelector('.clicker-icon'),
+  const clicker = document.querySelectorAll('.clicker'),
+        clickerIcon = document.querySelectorAll('.clicker-icon'),     
         display = document.querySelector('.display_black'),
         container = document.querySelector('.container'),
         link = document.querySelectorAll('*'),
-        left = document.querySelectorAll('.left'),
-        right = document.querySelectorAll('.right'),
+        border = document.querySelectorAll('.left, .right, .top-menu-fixed'),
         btn = document.querySelector('.btn'),
-        clicker = document.querySelector('.clicker'),
-
-        logo = document.querySelector('.logo img');
-        // console.dir(logo);
+        logo = document.querySelectorAll('.logo img');
 
 
   const white = () => {
     display.classList.add('display_white');
     display.classList.remove('display_black');
-    clickerIcon.classList.add('sun');
-    clickerIcon.classList.remove('moon');
+    clickerIcon.forEach(el=>{
+      el.classList.add('sun');
+      el.classList.remove('moon');
+    });
     container.style.color = `var(--black-color)`;
     btn.style.borderColor = `var(--black-color)`;
-    clicker.style.backgroundColor = `var(--black-color)`;
-    logo.src = "./static/logo_w_bg.png";
+    clicker.forEach(el=>{
+      el.style.backgroundColor = `var(--black-color)`;
+    });
+    logo.forEach(el=>{
+      el.src = "./static/logo_w_bg.png";
+    });
     link.forEach(el => {
       el.style.color = `var(--black-color)`;
       el.style.opacity = '1';
       el.style.fontWeight = "300";
     });
-    left.forEach(el => {
-      el.style.borderColor = `var(--black-color)`;
-    });
-    right.forEach(el => {
+    border.forEach(el=>{
       el.style.borderColor = `var(--black-color)`;
     });
   }
+
+
   const black = () => {
     display.classList.add('display_black');
     display.classList.remove('display_white');
-    clickerIcon.classList.add('moon');
-    clickerIcon.classList.remove('sun');
+    clickerIcon.forEach(el=>{
+      el.classList.add('moon');
+      el.classList.remove('sun');
+    });
     container.style.color = '';
     btn.style.borderColor = '';
-    clicker.style.backgroundColor = '';
-    logo.src = "./static/logo.png";
+    clicker.forEach(el=>{
+      el.style.backgroundColor = ``;
+    });
+    logo.forEach(el=>{
+      el.src = "./static/logo.png";
+    });
     link.forEach(el => {
       el.style.color = '';
       el.style.opacity = '';
       el.style.fontWeight = "";
     });
-    left.forEach(el => {
-      el.style.borderColor = '';
-    });
-    right.forEach(el => {
-      el.style.borderColor = '';
+    border.forEach(el=>{
+      el.style.borderColor = ``;
     });
   }
 
 
-  clisker.addEventListener('click', ()=>{
-    console.dir(display);
-
-    if(display.classList == 'display_black'){
-      white();
-    } else{
-      black();
-    }
+  clicker.forEach(el=>{
+    el.addEventListener('click', ()=>{
+      if(display.classList == 'display_black'){
+        white();
+      } else{
+        black();
+      }
+    })
   })
+  
 
 
 

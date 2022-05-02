@@ -23,16 +23,15 @@
 :root{
     --light-color: #D4D4D4;
     --black-color: #101010;
-    --size-12: 12px;
-    --size-14: 14px;
-    --size-18: 18px;
-    --size-20: 20px;
-    --size-24: 24px;
-    --size-64: 64px;
 
-    --padding-75: 75px;
-    --padding-60: 60px;
-    --padding-10: 5px;
+    --heading: 56px;
+    --all-txt: 14px;
+    --description: 9px;
+    --name-txt-1: 24px;
+    --name-txt-2: 14px;
+
+    --padding-in-1: 40px;
+    --padding-in-2: 5px;
 }
 
 /* GENERAL-------------------------------------------------------------------------- */
@@ -41,7 +40,7 @@
 
     font-family: "Montserat";
     font-weight: 100;
-    font-size: var(--size-18);
+    font-size: var(--all-txt);
 
     padding: 0;
     margin: 0;
@@ -91,7 +90,8 @@ a{
     width: 10vw;
 }
 .logo-img{
-    width: 100%;
+    width: 130px;
+    height: 130px;
 }
 
 
@@ -107,19 +107,19 @@ a{
 
 
 .clicker{
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     background-color: var(--light-color);
-    border-radius: 20px;
+    border-radius: 15px;
 
     box-shadow: 0px 0px 10px var(--light-color);
     transition: all .3s ease; 
 }
 .clicker-icon{
-    width: 51px;
-    height: 51px;
+    width: 40px;
+    height: 40px;
     transform: translateX(25%) translateY(21%);
-    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .sun{
@@ -150,21 +150,18 @@ a{
 b{
     font-family: "Montserat";
     font-weight: 300;
-    /* color: var(--light-color); */
-    font-size: var(--size-64);
+    font-size: var(--heading);
 }
 .heading{
-    /* color: var(--light-color); */
-    font-size: var(--size-64);
+    font-size: var(--heading);
 
-    margin-bottom: var(--padding-60);
+    margin-bottom: var(--padding-in-1);
 }
 
 .descriptoin{
     font-family: "Azonix";
     font-weight: normal;
-    /* color: var(--light-color); */
-    font-size: var(--size-12);
+    font-size: var(--description);
     opacity: 30%;
     letter-spacing: 2px;
 }
@@ -175,7 +172,7 @@ b{
     display: flex;
 }
 .do-left{
-    padding: var(--padding-60) var(--padding-60) var(--padding-10) var(--padding-10);
+    padding: var(--padding-in-1) var(--padding-in-1) var(--padding-in-2) var(--padding-in-2);
     text-align: right;
 }
 .do-left-heading{
@@ -188,8 +185,7 @@ b{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
-    padding-left: 60px;
+    align-items: center;
 }
 .do-callouts{
     text-transform: uppercase;
@@ -198,12 +194,10 @@ b{
 
 /* SERVICES------------------------ */
 .services{
-    /* height: 1120px; */
-
     display: flex;
 }
 .services-left{
-    padding: var(--padding-60);
+    padding: var(--padding-in-1);
 }
 
 .serv-item{
@@ -221,7 +215,8 @@ b{
 .serv-img{
     width: 500px;
     height: 260px;
-    /* border: var(--black-color) 1px solid; */
+    background-size: cover;
+    background-position: center center;
 }
 .serv-img__dev{
     background-image: url('../img/services_1.png');
@@ -251,7 +246,7 @@ b{
     display: flex;
 }
 .work-left{
-    padding: var(--padding-60) var(--padding-60) var(--padding-10) var(--padding-60);
+    padding: var(--padding-in-1) var(--padding-in-1) var(--padding-in-2) var(--padding-in-1);
 }
 .work-left-heading{
     text-align: right;
@@ -260,11 +255,11 @@ b{
     display: flex;
     justify-content: space-between;
 
-    margin:  0 0 var(--padding-60) 0;
+    margin:  0 0 var(--padding-in-1) 0;
 }
 .work-list__test{
-    font-size: var(--size-64);
-    padding-bottom: var(--padding-60);
+    font-size: var(--heading);
+    padding-bottom: var(--padding-in-1);
     position: relative;
 }
 .work-list__test:after{
@@ -275,7 +270,7 @@ b{
     transform-origin: center center;
 }
 .work-list__test:hover:after{
-    transform: translateX(100px) rotate(-180deg) ;
+    transform: translateX(55px) rotate(-180deg) ;
     transform-origin: center center;
 }
 
@@ -298,7 +293,7 @@ b{
     display: flex;
 }
 .about-left{
-    padding: var(--padding-60);
+    padding: var(--padding-in-1);
 }
 .about-list{
     display: flex;
@@ -329,16 +324,14 @@ b{
 .about-list-item__name{
     font-family: "Azonix";
     font-weight: normal;
-    /* color: var(--light-color); */
-    font-size: var(--size-14);
+    font-size: var(--name-txt-2);
     margin-top: 20px;
     letter-spacing: 2px;
 }
 .big{
     font-family: "Azonix";
     font-weight: normal;
-    /* color: var(--light-color); */
-    font-size: var(--size-24);
+    font-size: var(--name-txt-1);
     letter-spacing: 2px;
 }
 .about-description{
@@ -353,7 +346,7 @@ b{
     display: flex;
 }
 .price-left{
-    padding: var(--padding-60);
+    padding: var(--padding-in-1);
 }
 table{
     width: 100%;
@@ -371,7 +364,7 @@ td{
     display: flex;
 }
 .contacts-left{
-    padding: var(--padding-60);
+    padding: var(--padding-in-1);
 }
 .contacts-left-heading{
     text-align: right;
@@ -407,7 +400,6 @@ td{
 
 .contacts__txt{
     width: 40%;
-    /* color: var(--light-color); */
 }
 .contacts__txt-item:not(:last-child){
     margin-bottom: 20px;
