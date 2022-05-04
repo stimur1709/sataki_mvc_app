@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // -----------------click_on_btn------------------
   let form = document.querySelector('.contacts__form-block');
   form.addEventListener('submit', el=>{
-    el.preventDefault();
+    // el.preventDefault();
   });
 
 
@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', () => {
       el.style.backgroundColor = `var(--black-color)`;
     });
     logo.forEach(el=>{
-      el.src = "./static/logo_w_bg.png";
+      el.src = "/logo_w_bg.png";
     });
     link.forEach(el => {
       el.style.color = `var(--black-color)`;
@@ -76,7 +76,7 @@ window.addEventListener('DOMContentLoaded', () => {
       el.style.backgroundColor = ``;
     });
     logo.forEach(el=>{
-      el.src = "./static/logo.png";
+      el.src = "../logo.png";
     });
     link.forEach(el => {
       el.style.color = '';

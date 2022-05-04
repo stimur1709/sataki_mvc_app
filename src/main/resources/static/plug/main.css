@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@font-face {
+    font-family: "Montserat";
+    src: url("../fonts/Montserrat-ExtraLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+
+html,
+body {
+  background-image: url('../img/black-background.gif');
+  font-family: 'Inconsolata', sans-serif;
+}
+
+.container{
+    max-width: 1500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+
+
+
+.dev{
+    color: white;
+    font-family: "Montserat";
+    font-size: 24px;
+    margin-right: 100px;
+
+    animation: noise 2s linear infinite;
+    overflow: default;
+}
+.code {
+    color: white;
+    animation: noise-3 1s linear infinite;
+}
+
+
+
+.dev::after{
+    content: 'Страница находиться в разработке:) Но скоро можно будет насладиться всей красотой проектов!';
+    font-family: "Montserat";
+    font-size: 26px;
+    font-style: italic;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    color: rgb(0, 203, 112);
+    animation: noise-1 .2s linear infinite;
+}
+.dev::before{
+    content: 'Страница находиться в разработке:) Но скоро можно будет насладиться всей красотой проектов!';
+    font-family: "Montserat";
+    font-size: 26px;
+    margin: auto;
+    position: absolute;
+    top: -10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    color: red;
+    animation: noise-2 .2s linear infinite;
+}
+
+
+
+
+@keyframes noise {
+    0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; transform: scaleY(1);}  
+    4.3% {opacity: 1; transform: scaleY(1.7);}
+    43% {opacity: 1; transform: scaleX(1.5);}
+}
+@keyframes noise-1 {
+    0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+    10% {opacity: .1;}
+    50% {opacity: .5; left: -6px;}
+    80% {opacity: .3;}
+    100% {opacity: .6; left: 2px;}
+}
+@keyframes noise-2 {
+    0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+    10% {opacity: .1;}
+    50% {opacity: .5; left: 6px;}
+    80% {opacity: .3;}
+    100% {opacity: .6; left: -2px;}
+}
+@keyframes noise-3 {
+    0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
+    4.3% {opacity: 1; transform: scaleY(4);}
+    43% {opacity: 1; transform: scaleX(10) rotate(60deg);}
+}
+
+
+
+
+/* color_style---------------- */
+span.blue {
+    color: #48beef;
+}
+span.comment {
+    color: #7f8c8d;
+}
+span.orange {
+    /* color: #f39c12; */
+    /* color: blue; */
+    color: rgb(0, 203, 112);
+}
+span.green {
+    /* color: #33cc33; */
+    color: red;
+}
+.comment {
+    color: #7f8c8d;
+}
+/* color_style---------------- */
+
+
+
+/* media------------------------ */
+
+*{
+    overflow: hidden;
+}
+@media(max-width: 1000px){
+    .container{
+        padding: 30px;
+    }
+}
+@media(max-width: 900px){
+    .container{
+        flex-direction: column;
+    }
+    .dev{
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+}
+@media(max-width: 420px){
+    .container{
+        align-items: flex-start;
+    }
+}
+/* media------------------------ */

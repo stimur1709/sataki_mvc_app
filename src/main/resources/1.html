@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.png">
+    <!-- SEO tags -->
+    <meta name="description" content="Разработка корпоративных сайтов ">
+    <!-- style connect -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <title>SATAKI</title>
+</head>
+
+
+<body>
+    <div class="display">
+        <div class="container">
+
+
+            <section class="left-menu-fixed">
+                <div class="logo"><img src="/logo.png" alt="" class="logo-img"></div>
+                <ul class="menu">
+                    <li class="menu-item">Услуги</li>
+                    <li class="menu-item">Работы</li>
+                    <li class="menu-item">О нас</li>
+                    <li class="menu-item">Стоимость</li>
+                    <li class="menu-item">Связь с нами</li>
+                </ul>
+                <div class="clicker">
+                    <p class="teme-txt">Темная<br>тема</p>
+                    <div class="teme-block"><div class="teme-circle"></div></div>
+                </div>
+            </section>
+            <div class="left-menu"></div>
+
+
+            <div class="information">
+                <section class="do">
+                    <div class="left do-left">
+                        <h1 class="heading do-left-heading">Создаём <b>лендинги,<br> корпоративные сайты</b> для малого<br> и среднего бизнеса</h1>
+                        <p class="descriptoin do-left-description">Improve daily, throughout your life,<br> so that today you are better than yesterday, and tomorrow better than today. There is no limit to perfection</p>
+                    </div>
+                    <div class="right do-right">
+                        <p class="do-callouts">Разработка</p>
+                        <p class="do-callouts">Дизайн</p>
+                        <p class="do-callouts">Поддержка</p>
+                    </div>
+                </section>
+
+                <section class="services">
+                    <div class="left">gadsgsdgsa
+                    </div>
+                    <div class="right">
+                        <p class="descriptoin">Neglect <br>is a very dangerous thing</p>
+                    </div>
+                </section>
+
+                <section class="contacts">
+                    <div class="left">
+                        <h1 class="heading contacts-left-heading">Связь с нами</h1>
+                        <div class="contacts__form-txt">
+                            <div class="contacts__form">
+                                <form action="" class="contacts__form-block" method="post" th:action="@{/sataki/save}" th:object="${webForm}">
+                                    <div><textarea class="comment" name="comment"></textarea></div>
+                                    <div class="contacts__form-block-nexus">
+                                        <p class="contacts__form-block-description">ВАШЕ ИМЯ</p>
+                                        <input type="text" class="form-block-item name" autocomplete="off" th:field="*{name}">
+                                        <p style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name error</p>
+                                    </div>
+                                    <div class="contacts__form-block-nexus">
+                                        <p class="contacts__form-block-description">НАЗВАНИЕ КОМПАНИИ</p>
+                                        <input type="text" class="form-block-item company-name" autocomplete="off" th:field="*{nameCompany}">
+                                        <p style="color: red" th:if="${#fields.hasErrors('nameCompany')}" th:errors="*{nameCompany}">nameCompany error</p>
+                                    </div>
+                                    <div class="contacts__form-block-nexus">
+                                        <p class="body__form-block-description">ТЕЛЕФОН</p>
+                                        <input type="text" class="form-block-item tel" autocomplete="off" th:field="*{number}">
+                                        <p style="color: red" th:if="${#fields.hasErrors('number')}" th:errors="*{number}">number error</p>
+                                    </div>
+                                    <div class="contacts__form-block-nexus">
+                                        <p class="body__form-block-description">ПОЧТА</p>
+                                        <input type="text" class="form-block-item e-mail" autocomplete="off" th:field="*{email}">
+                                        <p style="color: red" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">email error</p>
+                                    </div>
+                                    <input class="btn" type="submit" value="Отправить">
+                                </form>
+                            </div>
+
+                            <div class="contacts__txt">
+                                <div class="contacts__txt-item">
+                                    <h6 class="contacts__txt-item-heading">ЧЕМ ВЫ ЗАНИМАЕТЕСЬ?</h6>
+                                    <p class="contacts__txt-item-descripion">Расскажите о своей компании. Как работаете, на чем зарабатываете? Кто ваши конкуренты? Чем вы от них отличаетесь?
+                                    </p>
+                                </div>
+                                <div class="contacts__txt-item">
+                                    <h6 class="contacts__txt-item-heading"></h6>
+                                    <p class="contacts__txt-item-descripion"></p>
+                                </div>
+                                <div class="contacts__txt-item">
+                                    <h6 class="contacts__txt-item-heading"></h6>
+                                    <p class="contacts__txt-item-descripion"></p>
+                                </div>
+                                <div class="contacts__txt-item">
+                                    <h6 class="contacts__txt-item-heading"></h6>
+                                    <p class="contacts__txt-item-descripion"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right"></div>
+                </section>
+            </div>
+
+            
+
+        </div>
+    </div>
+</body>
+</html>
